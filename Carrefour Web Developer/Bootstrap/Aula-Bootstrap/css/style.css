@@ -1,0 +1,62 @@
+body{
+    font: 20px; Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #5cc43a;
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font:30px;
+}
+
+.titulo{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.subtitulo{
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: medium;
+}
+
+.nav-link{
+    color:white;
+    margin-top: 20px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.quem-somos {
+    background-color: #6363d3;
+    color: white;
+}
+
+.margin {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.parceiros {
+    background-color: white;
+}
+
+.bg-footer{
+    background-color: black;
+    color: orangered;
+    text-align: justify;
+}
+
+.paragrafo{
+    margin-top: 25px;
+}
+
+.bi{
+    color: orangered;
+    text-decoration: ;
+}
