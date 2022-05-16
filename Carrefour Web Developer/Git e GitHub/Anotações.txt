@@ -1,0 +1,4 @@
+O Git Bash e um terminal para otimizar o uso do Git.
+
+## Vou incluir alguns links:
+[Este é o link para baixar o Git](https://git-scm.com/download/win)
