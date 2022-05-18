@@ -1,0 +1,224 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+body{
+    background: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: space-between;
+}
+/*Logo*/
+header .logo{
+    width: 8%;
+    height: 5%;
+    margin: 15px 20px 15px 30px;
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+/*MENU DE OPÇÕES*/
+header nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter ;
+}
+header nav a inicio{
+    color: white;
+}
+
+header nav a:hover{
+    color: #aaa;
+
+}
+/*BUSCA*/
+header .search{
+    margin-left: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-items: space-between;
+    text-align: unset;
+    cursor: pointer;   
+}
+
+header .perfil{   
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-items: space-between;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/*Texto para troca de perfil*/
+header .perfil a{
+    margin-left: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-items: space-between;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*link Alarme*/
+header .perfil i{
+    margin-left: 28px;
+    font-size: 23px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-items: space-between;
+    text-align: right;
+    cursor: pointer;
+}
+
+
+
+header .menu-perfil{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-items: space-between;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+/*Foto do perfil*/
+header .fotoperfil{
+    margin-left: 25px;
+    width: 25%;
+    height: 25%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+} 
+/*Menu do Perfil*/
+header .menu-perfil i{
+    margin-left: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+    width: 80%;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    
+    font-weight: bold;
+    font-stretch: normal;
+    font-family: Arial;
+}
+
+.filme-principal .titulo{
+    width: 30%;
+    height: 30%;
+    margin-top: 0%;
+    margin-left: 0px;
+    align-items: flex-start;
+}
+
+.botaoplay{
+    background-color: rgba(255, 255, 255, );
+    border: none;
+    border-radius: 5px;
+    color: black;
+
+    padding: 15px 30px;
+    margin-right: 5px;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-family: Arial;
+    
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botaoplay:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.botaoinfo{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 5px;
+    margin-top: 30px;
+    
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botaoinfo:hover {
+    background-color: rgba(255, 255, 255, 0.103);  
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 10%;
+    display: block;
+}
+
+.carosel-filmes{
+    margin-top: 10px;
+}
+
+/*LEGAL NÉ? EM BREVE TEM MAIS! BORA PARA O PRÓXIMO?*/
