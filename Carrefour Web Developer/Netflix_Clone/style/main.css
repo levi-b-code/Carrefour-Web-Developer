@@ -1,3 +1,8 @@
+/*Desenvolvido por Levi Barbosa
+https://github.com/levibarbosatec
+https://www.linkedin.com/in/iamjohnlevi/
+*/
+
 :root{
     --vermelho:#E50914;
     --preta:#141414;
@@ -6,7 +11,10 @@
 *{
     margin: 0;
     padding: 0;
+    border: none;
+    outline: none;
     box-sizing: border-box;
+    font-size: 100%;
 }
 /*elementos base*/
 body{
@@ -48,10 +56,9 @@ header nav a:hover{
 }
 /*BUSCA*/
 header .search{
-    margin-left: 560px;
+    margin-left: 600px;
     display: flex;
-    flex-direction: column;
-    align-items: center ;
+    flex-direction: row;
     justify-items: space-between;
     text-align: unset;
     cursor: pointer;   
@@ -66,34 +73,12 @@ header .perfil{
     font-family: Arial, Helvetica, sans-serif;
     
 }
-/*Texto para troca de perfil*/
-header .perfil a{
-    margin-left: 28px;
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    justify-items: space-between;
-    text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
-}
-/*link Alarme*/
-header .perfil i{
-    margin-left: 28px;
-    font-size: 23px;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    justify-items: space-between;
-    text-align: right;
-    cursor: pointer;
-}
 
 
-
-header .menu-perfil{
-    margin-left: 0px;
-    display: flex;
+header .search{
+    margin-left: 530px;
+    display: block;
+    color: white;
     flex-direction: row;
     align-items: center ;
     justify-items: space-between;
@@ -101,29 +86,45 @@ header .menu-perfil{
     transition: .3s ease all;
 }
 /*Foto do perfil*/
-header .fotoperfil{
-    margin-left: 25px;
-    width: 25%;
-    height: 25%;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
+header .foto-perfil{
+    margin-left: 10px;
+    width: 60%;
+    height: 60%;
+    
+    
 } 
 /*Menu do Perfil*/
-header .menu-perfil i{
-    margin-left: 10px;
-    font-size: 15px;
+header .more {
+    margin-left: -30px;
+    text-decoration:none;
     display: flex;
-    flex-direction: column;
-    
-
+    color: white;
+    flex-direction: row;
+    cursor: pointer;
 }
 
+/*Codigo do video*/
+
+.media-container{
+    margin-left: 0px;
+    padding: 0px;
+    display: block;
+    width: 1360px;
+    height: 768px;
+}
+
+.containner figure.filme-principal{
+    position: absolute;
+    margin-top: 0px;
+}
+/*Final do código*/
 
 /*filme principal*/
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    margin: 0px;
+    display: flexbox;
+    /*background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-dr-strange.jpg'); */
 
     height: 400px;
     background-size: cover;
@@ -134,82 +135,66 @@ header .menu-perfil i{
 
 }
 
-.filme-principal .descricao{
-    width: 80%;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    
-    font-weight: bold;
-    font-stretch: normal;
-    font-family: Arial;
+/*Botões*/
+.filme-principal .btn1{
+    width: 60%;
+    height: 50px;
+    margin-bottom: 210%;
+    margin-left: 4%;
+    position: absolute;
+}
+.filme-principal .btn2{
+    width: 50%;
+    height: 50px;
+    margin-bottom: 210%;
+    margin-left: 35%;
+    position: absolute;
 }
 
+/*Titulo do Filme*/
 .filme-principal .titulo{
-    width: 30%;
-    height: 30%;
-    margin-top: 0%;
-    margin-left: 0px;
+    width: 60%;
+    height: 50%;
+    margin-bottom: 300%;
+    margin-left: 2%;
     align-items: flex-start;
+    
+    background: linear-gradient(rgba(255, 252, 252, 0.5),rgba(87, 1, 1, 0.5)100%);
+    padding: 20px;
+    border-radius: 5px;
+    
 }
 
-.botaoplay{
-    background-color: rgba(255, 255, 255, );
-    border: none;
-    border-radius: 5px;
-    color: black;
-
-    padding: 15px 30px;
-    margin-right: 5px;
-    margin-top: 30px;
-    font-size: 12px;
+/*Descrição do Filme*/
+.filme-principal .descricao{
+    position: absolute;
+    color: #ffffff;
+    width: 160%;
+    height: 20%;
+    margin-bottom: 245%;
+    margin-left: 0%;
+    font-size: 15px;
     font-weight: bold;
     font-stretch: normal;
     font-family: Arial;
+    text-align: left;
     
-
-    cursor: pointer;
-    transition: .3s ease all;
+    background: linear-gradient(rgba(0, 0, 0, 0.226),rgba(0, 0, 0, 0.177)100%);
+    padding: 4%;
+    border-radius: 0px 0px 0px;
 }
 
-.botaoplay:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-}
 
-.botaoinfo{
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    border-radius: 5px;
-    color: white;
 
-    padding: 15px 30px;
-    margin-right: 5px;
-    margin-top: 30px;
-    
-    font-size: 12px;
-    font-weight: bold;
-    font-stretch: normal;
-    
 
-    cursor: pointer;
-    transition: .3s ease all;
-}
 
-.botaoinfo:hover {
-    background-color: rgba(255, 255, 255, 0.103);  
-}
-
-.botao i{
-    margin-right: 8px;
-}
-
-.container{
+.filme-principal.container{
     margin-left: 20px;
+    margin-bottom: 5px;
+    width: 70%;
+    position: absolute;
 }
 
-.filme-principal .container{
-    width: 70%;
-}
 
 .box-filme{
     height: 100%;
@@ -220,5 +205,26 @@ header .menu-perfil i{
 .carosel-filmes{
     margin-top: 10px;
 }
+
+.lancamentos{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/gUNRlH66yNDH3NQblYMIwgZXJ2u.jpg');
+
+    height: 5
+    0px;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+    
+}
+
+.lancamentos h2{
+    margin: 15px;
+}
+
 
 /*LEGAL NÉ? EM BREVE TEM MAIS! BORA PARA O PRÓXIMO?*/
